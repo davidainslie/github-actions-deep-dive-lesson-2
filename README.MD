@@ -27,8 +27,20 @@ Objectives:
 
 Note there are `terraform` scripts to help out.
 
-## Feature - Initial Page
+## Feature - Preprod workflow
 
 We create a branch: `feature-initial-page`
 
-And create an associated workflow: preprod.yaml
+And create an associated workflow: `preprod.yaml`
+
+## Feature - Prod workflow
+
+We create a branch: `feature-prod`
+
+And create an associated workflow: `prod.yaml`
+
+## Feature - Update (launching our static website)
+
+We create a branch: `feature-launch-date`
+
+We change `index.js`, adding `Launch Date Announced!!!`.
