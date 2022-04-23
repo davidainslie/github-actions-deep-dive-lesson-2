@@ -24,3 +24,9 @@ Objectives:
    - Build code
    - Upload (to `prod` bucket)
    - Deploy
+
+Note there are `terraform` scripts to help out.
+
+## Feature - Initial Page
+
+We create a branch: `feature-initial-page`
