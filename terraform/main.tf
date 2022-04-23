@@ -2,13 +2,23 @@
 # terraform destroy -var-file="secrets.tfvars"
 
 resource "aws_s3_bucket" "preprod-bucket" {
-  bucket = "preprod-bucket-da"
-  force_destroy = true
+  bucket = "preprod-bucket-davidainslie"
+  acl = "public-read"
+
+  website {
+    index_document = "index.html"
+    error_document = "error.html"
+  }
 }
 
 resource "aws_s3_bucket" "prod-bucket" {
-  bucket = "prod-bucket-da"
-  force_destroy = true
+  bucket = "prod-bucket-davidainslie"
+  acl = "public-read"
+
+  website {
+    index_document = "index.html"
+    error_document = "error.html"
+  }
 }
 
 data "aws_iam_policy" "s3-full-access-policy" {
