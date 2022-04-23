@@ -30,3 +30,5 @@ Note there are `terraform` scripts to help out.
 ## Feature - Initial Page
 
 We create a branch: `feature-initial-page`
+
+And create an associated workflow: preprod.yaml
