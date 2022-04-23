@@ -13,13 +13,12 @@ const IndexPage = () => {
       </header>
       
       <main className='main'>
-        
-
           <h1 className='title'>
             Welcome to{' '}
             <code className='title_code'>Cloud Coffee</code>
           </h1>
       
+          <h2 className='title'>Launch Date Announced!!!</h2>
 
           <p className='description'>
             Join Our Mailing List!
@@ -30,9 +29,7 @@ const IndexPage = () => {
           </p>
 
           <footer className='footer'>
-            <a
-              href="https://acloud.guru"
-            >
+            <a href="https://acloud.guru">
               Powered by{' '}
               <span className='logo'>
                 <StaticImage src="../images/ACG_Orange_Logo_Horizontal.png" alt="A Cloud Guru logo" width={119} height={16} />
@@ -40,8 +37,6 @@ const IndexPage = () => {
             </a>
           </footer>
       </main>
-
-      
     </Layout>
   )
 }
