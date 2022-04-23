@@ -3,6 +3,7 @@
 
 resource "aws_s3_bucket" "preprod-bucket" {
   bucket = "preprod-bucket-davidainslie"
+  force_destroy = true
   acl = "public-read"
 
   website {
@@ -13,6 +14,7 @@ resource "aws_s3_bucket" "preprod-bucket" {
 
 resource "aws_s3_bucket" "prod-bucket" {
   bucket = "prod-bucket-davidainslie"
+  force_destroy = true
   acl = "public-read"
 
   website {
