@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      BUCKET: preprod-bucket-da
+      BUCKET: preprod-bucket-davidainslie
 
     steps:
       - name: Checkout code
