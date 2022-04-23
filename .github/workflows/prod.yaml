@@ -1,16 +1,16 @@
-name: Deploy feature branches to preprod bucket
+name: Deploy site to production bucket
 
 on:
   push:
     branches:
-      - feature*
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     env:
-      BUCKET: preprod-bucket-davidainslie
+      BUCKET: prod-bucket-davidainslie
 
     steps:
       - name: Checkout code
@@ -34,5 +34,5 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy files to preprod bucket
+      - name: Deploy files to prod bucket
         run: aws s3 cp public s3://${{env.BUCKET}}/ --recursive --acl public-read
